@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    width: 36vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+.side-content{
+    position: absolute;
+    top:55vh;
+    left: 4vw;
+}
+
+
+
+.svg-box{
+    position: fixed;
+    top:20vh;
+    left: 25vw;
+    border-radius: 100%;
+    background-color: purple;
+}
+
+.svg-content{
+    position: fixed;
+    top: 34vh;
+    letter-spacing: 2px;
+    left: 20vw;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    height: 400vh;
+    left: 36vw;
+    width: 63vw;
+    z-index: -1;
+    background-color: grey;
+}
+
+#Opaque_Ring{ 
+    stroke-dasharray: 816;
+    transition: all .2s ease-out;
+}
+
+.ring1{
+    stroke-dashoffset:816;
+}
+
+.ring2{
+    stroke-dashoffset:680;
+
+}
+
+.ring3{
+    stroke-dashoffset:544;
+
+}
+
+.ring4{
+    stroke-dashoffset:444;
+
+}
+
+.ring5{
+    stroke-dashoffset:372;
+
+}
+
+.ring6{
+    stroke-dashoffset:136;
+
+}
+
+.ring7{
+    stroke-dashoffset:0;
+
+}
+
+.text1,.text2,.text3,.text4,.text5,.text6,.text7{
+    opacity:0;
+    transform: translateY(50px);
+    transition: all .2s ease-out;
+    transition-delay: .2s;
+}
+
+.image1,.image2,.image4,.image7,.image8,.image11,.image12,.image13{
+    opacity:0;
+    transform: translateY(500px);
+    transition: all .5s ease-out;
+    transition-delay: .2s;
+
+}
+.image3,.image5,.image6,.image9,.image10{
+    opacity:0;
+    transform: translateY(-500px);
+    transition: all .2s ease-out;
+    transition-delay: .2s;
+
+}
+
+
+.text1.show,.text2.show,.image1.show,.image2.show,.image3.show,.text3.show,.image4.show,.image5.show,.text4.show,.image6.show,.image7.show,
+.text5.show,.text6.show,.text7.show,.image8.show,.image9.show,.image10.show,.image11.show,.image12.show,.image13.show{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+
